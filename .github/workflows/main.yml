@@ -1,0 +1,21 @@
+name: thử nghiệm đọc file README 
+On: 
+  push:
+      branches: ["main"]
+
+jobs: 
+  doc_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: B1: Xin Chao
+        run: echo "hello world"
+
+      -name: b2: - down code
+       uses: actions/checkout@v6.0.2
+
+      -name: B3 - Đọc file
+       run: cat README.md
+
+      
+       
